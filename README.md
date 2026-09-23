@@ -7,9 +7,10 @@ The goal of this project is to create an immersive distributed listening experie
 hdd
 
 ## Next Step
-[Week 1: Simple and slow](https://github.com/jj-gagnon/CART-263-DLA/tree/step-1-simple-and-slow)
+[Week 3: Meeting our client](https://github.com/eamon1000/CART470_ProjectJournal/tree/Week-2)
 
 
 ## Table of Contents
-[Week 1: Simple and slow](https://github.com/jj-gagnon/CART-263-DLA/tree/step-1-simple-and-slow)
+[Week 2: Project Brief](https://github.com/eamon1000/CART470_ProjectJournal/tree/Week-2)
+[Week 3: Meeting our client](https://github.com/eamon1000/CART470_ProjectJournal/tree/Week-3)
 
