@@ -7,9 +7,6 @@ In essence, our system will enable his students to present rich, spatialized sou
 
 On the phone, a user will load our web app, then place the phone on the floor or a table. Over the following minutes, the phones will play back a sound piece distributed across space, through he mobile phone speakers. The composers/designers determine the sound sources, their timing, position of the phones, and the grouping of phones. 
 
-## Next Step
-[Week 2: Project Brief](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-2)
-
 
 ## Table of Contents
 [Living Learning Contract](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Living-Learning-Contract)
