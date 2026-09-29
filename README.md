@@ -14,7 +14,8 @@ On the phone, a user will load our web app, then place the phone on the floor or
 ## Table of Contents
 [Living Learning Contract](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Living-Learning-Contract)
 
-[Week 2: Project Brief](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-2) /n
+[Week 2: Project Brief](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-2) 
+
 [Week 3: Meeting our client](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-3)
 
 
