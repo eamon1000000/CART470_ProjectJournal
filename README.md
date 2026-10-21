@@ -1,23 +1,21 @@
-# Week 3
+# Week 4
 
-## Meeting our client
+## Continued client meetings and development
 
-This week we met our client Gabriel twice and got a better understanding of his expectations and expertise for the project. I missed the second meeting, but caught up through the notes my teammates left in our google doc.
+This week we met with Gabriel again and settled some open questions about how the project will be structured. If each team is to fork their own client, it would be hard to queue and play every team's piece one after another, since the server would need each client's URL added to its allowed list. We decided to keep all student pieces in a single repository instead. This means teams won't be able to customize their own UI, but it keeps the system much simpler to run.
 
-He clarified the details about how we will be receiving the audio, and how we should structure the app for his students. I understand now that he wants us to essentially create an open-source tool that his students can fork from our Github repo and adjust to their needs, adding their own sound files and writing/customizing a JSON 'score' to program the playback of the audio files.
+Gabriel also gave us a list of pointers. These included adding a calibration beep to test volume, preventing phones from going to sleep, letting the conductor view schedule every team's piece, and visualizing the score and effects in the conductor view. He also suggested effects like overall level, fades, and drift, where two phones play the same sound at slightly different speeds.
 
-Jessica started a simple demo that plays audio through the server and I built on it by adding a 'Phone' class to represent each connected device. When a device connects now, the server creates a 'Phone' and gives it an ID, counting up from 0 each time the server starts. It then places the phone in a group by dividing the ID by the number of groups and taking the remainder (modulo). Each Phone records whether it's currently playing, and phones are removed when they disconnect.
+On my end, I finalized the full JSON score structure, including sounds, groups, effects, and timed events. I also built a simple test piece that plays across two phones. As a group, we discussed which effects to support. Since editing JSON by hand isn't very student-friendly, we're also building a form page that generates the score for them.
 
-It works simply across 2 locally hosted browser pages, which is a good start. We will continue to work on it this week according to our timeline.
-
-We also all worked on the [Living Learning Contract](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Living-Learning-Contract) and aligned it with the new understanding of the project that we got from Gabriel this week
+I defined a list of all variables and paramaters for the JSON file to assist my teammates in building the form.
 
 ## Next Step
-[Week 4: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-4)
+[Week 5: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-4)
 
 
 ## Table of Contents
 [Week 2: Project Brief](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-2)
 [Week 3: Meeting our Client](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-3)
-[Week 4: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-4)
+[Week 4: Continued client meetings and development](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-4)
 
