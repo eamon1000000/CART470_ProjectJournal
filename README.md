@@ -1,26 +1,27 @@
-# Week 5
+# Week 6
 
-## Making a working example
+## Tying our efforts together
 
-This week I focused on making a full example score that sounds good musically across five phone groups. I prepared the audio in Ableton, using pads, birds, bells, recorded charango, and foley recordings. I then arranged them in our JSON score format so the piece moves through the room across the different phones. Each group has its own chain of lowpass, delay, reverb, and pan effects, and timed events fade sounds in, open up filters, and shift the panning over time. Writing a real piece in the JSON format was a good test of what feels natural in a musical sense and where we maybe need to reconsider our usability in terms of a music making process.
+This week we focused on interconnecting all of our work and making our project into a more cohesive and unified application.
 
+On my end, I adjusted our file retrieval system to make it easier for us and the students to use. On GitHub, we now have a folder of folders, each following a specific template format for performances. This way, students can provide us with a consistent structure for their projects, and the repository stays more organized. In our conductor view, you can now select which piece to play, making it more intuitive for both types of users.
 
-<img width="1470" height="1452" alt="Screenshot 2026-10-21 154722" src="https://github.com/user-attachments/assets/4b05a963-162f-4ad6-9559-a087b0638b42" />
+##  new file structure
+<img width="1790" height="1484" alt="image" src="https://github.com/user-attachments/assets/32b24639-2ccd-4e91-bff8-f75481e4e8e1" />
 
+## new conductor view to select performance piece
+<img width="2816" height="1518" alt="image" src="https://github.com/user-attachments/assets/dfadfb45-2ee2-4105-a652-43144b52fa07" />
 
-I also defined the drift effect Gabriel asked for. Each group loops the same short clip with a small playback-rate offset, so the groups slowly fall out of phase with each other.
+I have also been working on a second example piece, using the website itself as a form of low-level user testing, and I've discovered some small issues with the flow that we will have to tweak. For example, we should implement a batch audio file upload system rather than a one-by-one approach, to make it easier for students to get started on their projects. We also need to come up with a better way to apply effects to the audio, as it's not quite as musically intuitive as it could be.
 
-As a team, we mapped out the user flow for the app. Audience members scan a QR code, wait for loading, press Enter, and see their group number. Students use a form to build their score with dropdowns and effect icons, download the JSON, and send it to Gabriel to add to the repo. Re-uploading the file to our page fills the form back in, allowing them to make quick edits. The conductor page shows the queue of scores and hopefully a playback timeline.
+That being said, we have been making really good progress. Everybody has a clear and defined role and is delivering what needs to be done.
 
+Last week, when we showed Gabriel our example piece over Zoom, he was really happy with it, which I think gave us some motivation.
 
-<img width="1580" height="746" alt="Screenshot 2026-10-21 154856" src="https://github.com/user-attachments/assets/6fd4e3bf-e637-44b2-aedb-c361bf137cb6" />
-
-
-We're playing the demo for Gabriel today and hope to get good feedback for the next iteration.
+As next week approaches, it's a bit nerve-racking because we will need to have it basically ready for his class. This means we will have to transfer the server to run on Compute Canada, and any further updates will be a bit more tedious. I think it will be okay though, and we will likely have to do a tutorial or demo for his students so they get a better grip on how to use the software. All in all, good progress, and I'm looking forward to fine-tuning it in the coming weeks.
 
 ## Next Step
-[Week 6: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-6)
-
+[Week 7: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-7)
 
 ## Table of Contents
 [Week 2: Project Brief](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-2)
@@ -29,6 +30,6 @@ We're playing the demo for Gabriel today and hope to get good feedback for the n
 
 [Week 4: Continued client meetings and development](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-4)
 
-[Week 5: Making a working example](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-4)
+[Week 5: Making a working example](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-5)
 
-
+[Week 6: Tying our efforts together](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-6)
