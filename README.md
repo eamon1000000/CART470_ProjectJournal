@@ -14,11 +14,12 @@ Working with his codebase was a challenge. I had to get all of this done in a we
 
 I added a similar form/score generator: a score editor where users can write and edit scores, preview them with a live timeline, and download the finished piece to upload. I also added a different file retrieval system that loads students' audio files and scores from public GitHub repositories by pasting a simple link. Finally, I added per-group audio effects (filters with LFO, reverb, delay and panning), which his version did not have. I then tested everything with phones connected to the ensemble and debugged issues with loading audio files from GitHub.
 
+### Score editor, with DAW style playback view
 <img width="2796" height="1342" alt="image" src="https://github.com/user-attachments/assets/be68df86-7d66-4cb0-a50c-c819d1407187" />
-Score editor, with DAW style playback view
 
+### Conductor view with ability to retrieve a piece from a Github link
 <img width="2384" height="1000" alt="image" src="https://github.com/user-attachments/assets/6e8e91a5-29a4-4eda-88c0-ba2248c618d7" />
-Conductor view with ability to retrieve a piece from a Github link
+
 
 I am happy, but I also want to add some more features to ours, because I am a bit more attatched to it.
 
