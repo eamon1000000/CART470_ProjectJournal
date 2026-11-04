@@ -1,27 +1,29 @@
-# Week 6
+# Week 7
 
-## Tying our efforts together
+## Pivoting for the client
 
-This week we focused on interconnecting all of our work and making our project into a more cohesive and unified application.
+This week we had to pivot.
 
-On my end, I adjusted our file retrieval system to make it easier for us and the students to use. On GitHub, we now have a folder of folders, each following a specific template format for performances. This way, students can provide us with a consistent structure for their projects, and the repository stays more organized. In our conductor view, you can now select which piece to play, making it more intuitive for both types of users.
+After finishing what we thought was a solid first iteration of a final product, we discovered at our client meeting that Gabriel had been building his own version of the software, which he revealed to us.
 
-##  new file structure
-<img width="1790" height="1484" alt="image" src="https://github.com/user-attachments/assets/32b24639-2ccd-4e91-bff8-f75481e4e8e1" />
+This was a bit of a shock, and we had to work through what our next steps were going to be. It was important for us to keep developing our software. We had already put so much work into it, and we want a substantial capstone project that we all feel we contributed to. At the same time, we understood our responsibility to deliver on the client's side and to support the direction he wants to go in.
 
-## new conductor view to select performance piece
-<img width="2816" height="1518" alt="image" src="https://github.com/user-attachments/assets/dfadfb45-2ee2-4105-a652-43144b52fa07" />
+Some group members felt a bit more upset about the miscommunication than I did and wanted to focus only on our software, so I took on delivering all of the requirements he asked for on his end this week. I forked his repository and collaborated with AI (claude code) to port the features he wanted from our version into his.
 
-I have also been working on a second example piece, using the website itself as a form of low-level user testing, and I've discovered some small issues with the flow that we will have to tweak. For example, we should implement a batch audio file upload system rather than a one-by-one approach, to make it easier for students to get started on their projects. We also need to come up with a better way to apply effects to the audio, as it's not quite as musically intuitive as it could be.
+Working with his codebase was a challenge. I had to get all of this done in a week without much context on how the architecture worked. I got it done, and when I met with him he was happy to see the progress. He suggested I finalize some details so he can use the new features with his students next week.
 
-That being said, we have been making really good progress. Everybody has a clear and defined role and is delivering what needs to be done.
+I added a similar form/score generator: a score editor where users can write and edit scores, preview them with a live timeline, and download the finished piece to upload. I also added a different file retrieval system that loads students' audio files and scores from public GitHub repositories by pasting a simple link. Finally, I added per-group audio effects (filters with LFO, reverb, delay and panning), which his version did not have. I then tested everything with phones connected to the ensemble and debugged issues with loading audio files from GitHub.
 
-Last week, when we showed Gabriel our example piece over Zoom, he was really happy with it, which I think gave us some motivation.
+<img width="2796" height="1342" alt="image" src="https://github.com/user-attachments/assets/be68df86-7d66-4cb0-a50c-c819d1407187" />
+Score editor, with DAW style playback view
 
-As next week approaches, it's a bit nerve-racking because we will need to have it basically ready for his class. This means we will have to transfer the server to run on Compute Canada, and any further updates will be a bit more tedious. I think it will be okay though, and we will likely have to do a tutorial or demo for his students so they get a better grip on how to use the software. All in all, good progress, and I'm looking forward to fine-tuning it in the coming weeks.
+<img width="2384" height="1000" alt="image" src="https://github.com/user-attachments/assets/6e8e91a5-29a4-4eda-88c0-ba2248c618d7" />
+Conductor view with ability to retrieve a piece from a Github link
+
+I am happy, but I also want to add some more features to ours, because I am a bit more attatched to it.
 
 ## Next Step
-[Week 7: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-7)
+[Week 8: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-8)
 
 ## Table of Contents
 [Week 2: Project Brief](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-2)
@@ -33,3 +35,6 @@ As next week approaches, it's a bit nerve-racking because we will need to have i
 [Week 5: Making a working example](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-5)
 
 [Week 6: Tying our efforts together](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-6)
+
+[Week 7: Pivoting for the client](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-7)
+
