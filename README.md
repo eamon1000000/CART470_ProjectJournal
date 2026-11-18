@@ -1,29 +1,26 @@
-# Week 8
+# Week 9
 
-## Continuing to polish, and working with Gabriel as he introduces the software to his students
+## Second round of feedback on pull requests
 
-This week was primarily about debugging the features I ported into Gabriel's version last week, getting them ready for him to use, then creating proper pull requests for his repo.
+This week Gabriel left two more comments on my first pull request. It's still the only one he's looked at so far, so things are moving a bit slower than I anticipated, or understood was necessary, but the feedback has been useful.
 
-Starting with the score editor, some of the styling had broken during the port, so I went back to how we had done things in our version and fixed it. I also changed the layout a bit so that the score preview and playback now sit below the form instead of beside it, and I made the list of uploaded audio files much more compact, because it was taking up way too much space and getting in the way on the form. I also fixed a small issue in the preview timeline where the titles of sounds were overlapping when a group played more than one sound at the same time; they now stack on top of eachother so you can see the names of both files clearly.
+His first comment was about the LFO on the filters. In the score file, it wasn't clear that the LFO was changing the frequency, so I moved it under the key for frequency itself, the way he suggested to me. His second question was why the score has both an `effects` key and an `effectEvents` key in the score. I kept them separate because it makes more sense to me that way, where the effects one sets up each group's effect chain and the effectEvents programs the changes it over time, so I added a line to the read me to make it understood, but also shared my openness to change it if he wants it to be different.
 
-Testing with phones on his version (where he uses mqtt as opposed to our server based setup) has been a struggle because of the university wifi, which blocks the phones from connecting to a laptop's IP adress (i think?). To get around it, Gabriel suggested I run a local server with http-server and open a tunnel with cloudflared, which gives a public link the phones can open. I added these steps to the his documentation.
+While going through his comments, I realized that it was difficult to actually create an effect change as a user in our current form. The dropdown was empty unless you had already added effects further up the page,which  I reworked so you pick an effect and then one of its settings, and it shows what value you're changing from in the initial setup. If there are no effects yet, it tells you to add them above.
 
-I then made a separate branch to remove things that I thought weren't needed. I removed his old landing page and the "Free" mode on his conductor page, so it is now only about playing from a score, much more similar to our version, with his framework. I think this will keep it a lot simpler for his students, but ultimately it's up to him to decide what features he wants to keep. 
+### Reworked effect changes area in the score editor
+<img width="1020" height="1146" alt="Screenshot 2026-11-17 212855" src="https://github.com/user-attachments/assets/dd2e98f0-c098-45f4-9309-1685ab234f91" />
 
-### Score editor with the new layout
-<img width="1684" height="3794" alt="adapters-clothing-controlling-reporter trycloudflare com_ensemble_editor html_score=0 (1)" src="https://github.com/user-attachments/assets/4bc17238-4b1e-49e5-9f81-89f20bb25f75" />
+I pushed everything and emailed Gabriel explaining the changes and my reasoning, however I'm still feeling a bit out of the loop on what he wants. 
 
+As we move into the last three weeks of this project, I think it will be important to maintainn an open line of communication with him, if he wants this project finalized. To clarify exact details, I will try to meet with him during his sound class as well next week to udnerstand the more precise use cases of the software. 
 
-Once it all worked properly, I opened three pull requests on Gabriel's repository, one for each stage of the work (effects, score editor and retrieving score from GitHub, and the cleanup/debloated version), so he could review and merge them one at a time. I also emailed him and met with him to explain what each one does and iron out some issues relating to the pan effect.
+Now I'm switching back to our own version of the project and porting some of his features into our version.
 
-after all this, I tested everything again with phones, and score building workflow.
-
-# Next steps
-He is hoping to demo this new version with effects and score writing next week, so hopefully I will be able to sit in on that. This week however, I hope to turn my attention back to our version, and continue to make a product we are all proud of
-
+The live timeline and playback preview he has is a really useful feature, so I'm porting it into our JSON form. We already have a basic preview, but seeing the whole score laid out visually, and hearing the drift and effects before a performance, would make it a lot easier for students to write their pieces.
 
 ## Next Step
-[Week 9: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-9)
+[Week 10: ?](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-10)
 
 ## Table of Contents
 [Week 2: Project Brief](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-2)
@@ -38,4 +35,6 @@ He is hoping to demo this new version with effects and score writing next week, 
 
 [Week 7: Pivoting for the client](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-7)
 
-[Week 8: Continuing to polish, and working with Gabriel as he introduces the software to his students](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-8)
+[Week 8: Polishing and handing it over](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-8)
+
+[Week 9: Second round of feedback on pull requests](https://github.com/eamon1000000/CART470_ProjectJournal/tree/Week-9)
